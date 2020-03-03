@@ -1,12 +1,11 @@
 //Variables to use and it's a mix of global and local variables
 let shoppingCart = [];
-let products = document.getElementsByTagName('button');
 let cartProducts = '';
 
 //This code gets whatever is inside data-product in the HTML
 let product = event.target.parentNode.getAttribute('data-product');
 cartProducts += '<li><span class="product-title">Titel: </span>' + shoppingCart[i] + '</li>';
-shoppingCart.push(product);
+
 
 //
 document.getElementById('productsInCart').innerHTML = shoppingCart.length;
@@ -29,3 +28,18 @@ for(let i = 0; i < products.length; i++) {}
 updateCart();
 listProductsInCart();
 listProductsInCart();
+
+
+// solution provided by Chriss
+// let products = document.getElementsByTagName('button');
+// for(let i = 0; i < product.length; i++){
+//     console.log(product[i]);
+//     console.log('iteration' + i);
+//     product[i].addEventListener('click', function(event){
+//         console.log(even.target.parentNode.getAttribute('data-product');
+//         shoppingCart.push(product);
+    
+
+//     });
+
+// }
