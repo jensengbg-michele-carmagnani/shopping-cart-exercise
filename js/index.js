@@ -30,16 +30,17 @@ listProductsInCart();
 listProductsInCart();
 
 
-// solution provided by Chriss
-// let products = document.getElementsByTagName('button');
-// for(let i = 0; i < product.length; i++){
-//     console.log(product[i]);
-//     console.log('iteration' + i);
-//     product[i].addEventListener('click', function(event){
-//         console.log(even.target.parentNode.getAttribute('data-product');
-//         shoppingCart.push(product);
+//solution provided by Chriss
+
+let products = document.getElementsByTagName('button');
+for(let i = 0; i < product.length; i++){
+    console.log(product[i]);
+    console.log('iteration' + i);
+    product[i].addEventListener('click', function(event){
+        console.log(even.target.parentNode.getAttribute('data-product');
+        shoppingCart.push(product);
     
 
-//     });
+    });
 
-// }
+}
